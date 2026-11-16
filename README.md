@@ -81,7 +81,7 @@ Both deviations were found by reading source code and then confirmed with target
   - **Fixed in 0.8.1** with an exact lazy-tail Gumbel construction (39 vs 41.5); speculation stays bit-identical.
 - **kapitsa** clamps top_k to 32 whenever top_k is 0 or above 32, which is undocumented. It removes 1.1% (non-thinking text) or 0.48% (thinking text) of the probability mass per token on average at T = 1.
   - Minimal reproduction: 32 distinct first tokens over 400 seeds, where the full distribution gives about 121.
-  - Reported upstream (nace-ai/kapitsa#1286).
+  - Reported upstream (nace-ai/kapitsa#1286). The maintainers confirmed it and fixed it in #1289 and #1287, shipping in the release after 0.2.36.
 - **llama.cpp**, tested with its pre-sampling log-probs against its declared order of operations, passes L1 at both settings (14,354 and 16,376 tokens tested). Under draft-MTP, its API reports a placeholder p = 1 for 99.4% of tokens; this is a known upstream issue (#27972).
 - **mlx-lm's earlier top-p** (used in the PR) accumulates in bf16. It differs from exact semantics at about 3% of positions (mean TV 4·10⁻⁵): small but real, and present with speculation on and off alike.
 

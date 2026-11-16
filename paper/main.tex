@@ -36,7 +36,7 @@ We also study the history of an unmerged MTP pull request to mlx-lm. Every buggy
 An audit of four engines on Apple silicon finds no evidence of a speculation effect and no speculative-decoding error. Reading source code, followed by targeted tests, found two silent sampler deviations:
 \begin{itemize}
 \item raceline, developed by the author, kept only the top 1024 tokens when top-$k{=}0$; this is fixed in 0.8.1;
-\item kapitsa clamps top-$k$ to 32; this has been reported upstream.
+\item kapitsa clamps top-$k$ to 32; its maintainers confirmed this and have fixed it.
 \end{itemize}
 We release \texttt{lossless}, an engine-agnostic tool, at \url{https://github.com/audenvenn/lossless}.
 \end{abstract}
@@ -414,7 +414,7 @@ We proposed an exact fix that keeps the coupling: draw the tail's maximum as $\m
 
 A black-box rank test agrees. kapitsa emits about 5$\times$ fewer tokens than the other engines beyond reference rank 32, and about 20$\times$ fewer beyond rank 64 (Figure~\ref{fig:rank}). In a minimal reproduction with 400 seeds at $T{=}1$ and top-$k{=}0$, kapitsa yields exactly 32 distinct first tokens. The reference distribution predicts about 121 (99\% interval 103--140 over 20,000 simulations, and never 32 or fewer), and a top-32 cap 31.4. The engines' own weights shift these values somewhat.
 
-We reported this upstream (kapitsa\#1286) and invite the maintainers' response.
+We reported this upstream (kapitsa\#1286). The maintainers confirmed it and fixed it in two pull requests (\#1289, \#1287), to ship in the release after 0.2.36.
 \item \textbf{llama.cpp.} We take its pre-sampling top-20 log-probabilities and its declared order: top-$k$ (keeping exactly $k$), top-$p$, min-$p$, then temperature. Plain decoding passes L1 at both settings, with no violations:
   \begin{itemize}
   \item $T{=}1$: 14,354 tokens tested, none screened; KS $p=0.59$, surprisal $z=+0.25$.
