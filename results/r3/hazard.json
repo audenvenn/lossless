@@ -1,0 +1,58 @@
+{
+ "A_initial_greedy_specon": {
+  "prompts": 48,
+  "events": 48,
+  "positions_at_risk": 875,
+  "hazard_per_token": 0.054857142857142854,
+  "hazard_ci95": [
+   0.04044732665540942,
+   0.07273261277957402
+  ],
+  "km_median_tokens": 12,
+  "km_survival_at_end": 0.0,
+  "rate_ratio_vs_D": 9.091849624060151,
+  "p_rate_greater_than_D": 4.139172303775863e-22
+ },
+ "B_preResid_greedy_specon": {
+  "prompts": 48,
+  "events": 47,
+  "positions_at_risk": 1755,
+  "hazard_per_token": 0.02678062678062678,
+  "hazard_ci95": [
+   0.019677397246191313,
+   0.035612556319456964
+  ],
+  "km_median_tokens": 23,
+  "km_survival_at_end": 0.0,
+  "rate_ratio_vs_D": 4.438536512220723,
+  "p_rate_greater_than_D": 1.8605466267196764e-11
+ },
+ "C_preLpAcc_greedy_specon": {
+  "prompts": 48,
+  "events": 48,
+  "positions_at_risk": 1091,
+  "hazard_per_token": 0.043996333638863426,
+  "hazard_ci95": [
+   0.03243942330291773,
+   0.058332755437330214
+  ],
+  "km_median_tokens": 13,
+  "km_survival_at_end": 0.0,
+  "rate_ratio_vs_D": 7.291813401514786,
+  "p_rate_greater_than_D": 1.321230527994514e-18
+ },
+ "D_head_greedy_specon": {
+  "prompts": 48,
+  "events": 38,
+  "positions_at_risk": 6298,
+  "hazard_per_token": 0.006033661479834868,
+  "hazard_ci95": [
+   0.004269777968433812,
+   0.008281671787751604
+  ],
+  "km_median_tokens": 123,
+  "km_survival_at_end": 0.1556935817805383,
+  "rate_ratio_vs_D": 1.0,
+  "p_rate_greater_than_D": NaN
+ }
+}

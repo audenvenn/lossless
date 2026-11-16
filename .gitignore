@@ -1,0 +1,6 @@
+paths.local.env
+engines/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+paper/*.pdf

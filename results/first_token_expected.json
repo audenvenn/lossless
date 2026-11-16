@@ -1,0 +1,29 @@
+{
+ "n_draws": 400,
+ "prompt": "Write one random English word. Reply with the word only.",
+ "full_vocabulary": {
+  "expected_distinct": 120.97747519271408,
+  "sims": 20000,
+  "sim_quantiles": {
+   "0.001": 99.0,
+   "0.005": 103.0,
+   "0.5": 121.0,
+   "0.995": 140.0,
+   "0.999": 144.0
+  },
+  "p_at_most_32": 0.0
+ },
+ "top32_cap": {
+  "expected_distinct": 31.39949538110038,
+  "sims": 20000,
+  "sim_quantiles": {
+   "0.001": 28.0,
+   "0.005": 29.0,
+   "0.5": 32.0,
+   "0.995": 32.0,
+   "0.999": 32.0
+  },
+  "p_at_most_32": 1.0
+ },
+ "mass_beyond_rank32": 0.27384450357658413
+}

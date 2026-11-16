@@ -1,0 +1,68 @@
+{
+ "kapitsa_T1.0_plain_armoff.jsonl": {
+  "tokens": 14701,
+  "n_rank_ge_20": 119,
+  "n_rank_ge_32": 46,
+  "n_rank_ge_64": 4,
+  "n_rank_ge_1024": 0,
+  "frac_rank_ge_20": 0.008094687436228829,
+  "frac_rank_ge_32": 0.003129038840895177,
+  "frac_rank_ge_64": 0.000272090333990885,
+  "frac_rank_ge_1024": 0.0
+ },
+ "kapitsa_T1.0_plain_armmtp.jsonl": {
+  "tokens": 14620,
+  "n_rank_ge_20": 90,
+  "n_rank_ge_32": 29,
+  "n_rank_ge_64": 4,
+  "n_rank_ge_1024": 0,
+  "frac_rank_ge_20": 0.006155950752393981,
+  "frac_rank_ge_32": 0.0019835841313269494,
+  "frac_rank_ge_64": 0.00027359781121751026,
+  "frac_rank_ge_1024": 0.0
+ },
+ "mtplx_T1.0_plain_armoff.jsonl": {
+  "tokens": 14404,
+  "n_rank_ge_20": 187,
+  "n_rank_ge_32": 140,
+  "n_rank_ge_64": 83,
+  "n_rank_ge_1024": 17,
+  "frac_rank_ge_20": 0.012982504859761178,
+  "frac_rank_ge_32": 0.009719522354901417,
+  "frac_rank_ge_64": 0.005762288253262983,
+  "frac_rank_ge_1024": 0.0011802277145237434
+ },
+ "mtplx_T1.0_plain_armmtp.jsonl": {
+  "tokens": 14478,
+  "n_rank_ge_20": 190,
+  "n_rank_ge_32": 145,
+  "n_rank_ge_64": 83,
+  "n_rank_ge_1024": 9,
+  "frac_rank_ge_20": 0.013123359580052493,
+  "frac_rank_ge_32": 0.01001519546898743,
+  "frac_rank_ge_64": 0.005732836027075563,
+  "frac_rank_ge_1024": 0.0006216328222130128
+ },
+ "raceline_T1.0_plain_armon.jsonl": {
+  "tokens": 14432,
+  "n_rank_ge_20": 251,
+  "n_rank_ge_32": 173,
+  "n_rank_ge_64": 97,
+  "n_rank_ge_1024": 5,
+  "frac_rank_ge_20": 0.01739190687361419,
+  "frac_rank_ge_32": 0.011987250554323725,
+  "frac_rank_ge_64": 0.006721175166297118,
+  "frac_rank_ge_1024": 0.00034645232815964526
+ },
+ "raceline_T1.0_plain_armoff2.jsonl": {
+  "tokens": 14410,
+  "n_rank_ge_20": 314,
+  "n_rank_ge_32": 224,
+  "n_rank_ge_64": 125,
+  "n_rank_ge_1024": 4,
+  "frac_rank_ge_20": 0.021790423317140876,
+  "frac_rank_ge_32": 0.015544760582928523,
+  "frac_rank_ge_64": 0.008674531575294934,
+  "frac_rank_ge_1024": 0.0002775850104094379
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "written_at": "2026-11-16T23:43:40",
+ "rule": "numpy default_rng(20261116); 1 + 2 + 1 commits drawn uniformly from the three ranges of PR #990 history, excluding A-D; written before any run",
+ "ranges": {
+  "exact-match, state fixed (expected correct)": [
+   "aec34a6",
+   "1e9b502",
+   "2555209",
+   "15e798c",
+   "3d49f09",
+   "fcf404c",
+   "aa287f5",
+   "a2b622e",
+   "67a3395"
+  ],
+  "probabilistic acceptance before the lp_accept fix (expected buggy: untransformed acceptance)": [
+   "f8329d0",
+   "e8a8504",
+   "c1bd6b6",
+   "9cc398f",
+   "c331f0d",
+   "6b3e3c9",
+   "21b415a",
+   "aff5a19",
+   "d737eed"
+  ],
+  "after the lp_accept fix (expected correct)": [
+   "2322412",
+   "3deff32",
+   "3845302",
+   "a7ec358",
+   "22e8120",
+   "bf32b5b",
+   "17eec37",
+   "1ad7250",
+   "c97a209",
+   "6f7702b",
+   "ec584b3",
+   "7ee1b9a",
+   "dcbb45a",
+   "e828131",
+   "d5d552b"
+  ]
+ },
+ "picked": {
+  "exact-match, state fixed (expected correct)": [
+   {
+    "commit": "2555209",
+    "subject": "fix(mtp): address @janhilgard code review feedback (double-norm, quant_predicate)"
+   }
+  ],
+  "probabilistic acceptance before the lp_accept fix (expected buggy: untransformed acceptance)": [
+   {
+    "commit": "d737eed",
+    "subject": "fix(mtp): use residual sampling on rejection at temp>0"
+   },
+   {
+    "commit": "e8a8504",
+    "subject": "refactor(mtp): clean up mtp_generate_step and add dynamic MTP/batch switching"
+   }
+  ],
+  "after the lp_accept fix (expected correct)": [
+   {
+    "commit": "dcbb45a",
+    "subject": "quality(mtp): use explicit cache imports"
+   }
+  ]
+ },
+ "predictions": {
+  "exact-match, state fixed (expected correct)": "L1 pass (exact-match verification), L3 no difference",
+  "probabilistic acceptance before the lp_accept fix (expected buggy: untransformed acceptance)": "L1 reject (impossible tokens from untransformed acceptance), L3 likely a difference",
+  "after the lp_accept fix (expected correct)": "L1 pass, L3 no difference"
+ }
+}

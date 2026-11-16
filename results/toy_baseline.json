@@ -1,0 +1,131 @@
+{
+ "acceptance_rate": {
+  "deploy": 0.7598857740768191,
+  "T1": 0.7315775530928518
+ },
+ "reps": 100,
+ "alpha": 0.01,
+ "seed": 0,
+ "chain_tokens": 256,
+ "power": {
+  "correct": {
+   "3000": {
+    "L1": 0.01,
+    "chi2_1prefix": 0.0,
+    "chi2_10prefix": 0.02
+   },
+   "10000": {
+    "L1": 0.01,
+    "chi2_1prefix": 0.0,
+    "chi2_10prefix": 0.01
+   },
+   "30000": {
+    "L1": 0.0,
+    "chi2_1prefix": 0.01,
+    "chi2_10prefix": 0.01
+   }
+  },
+  "resample_target": {
+   "3000": {
+    "L1": 0.01,
+    "chi2_1prefix": 0.57,
+    "chi2_10prefix": 1.0
+   },
+   "10000": {
+    "L1": 0.07,
+    "chi2_1prefix": 0.77,
+    "chi2_10prefix": 1.0
+   },
+   "30000": {
+    "L1": 0.37,
+    "chi2_1prefix": 0.72,
+    "chi2_10prefix": 1.0
+   }
+  },
+  "accept_untransformed": {
+   "3000": {
+    "L1": 0.98,
+    "chi2_1prefix": 0.71,
+    "chi2_10prefix": 1.0
+   },
+   "10000": {
+    "L1": 1.0,
+    "chi2_1prefix": 0.8,
+    "chi2_10prefix": 1.0
+   },
+   "30000": {
+    "L1": 1.0,
+    "chi2_1prefix": 0.73,
+    "chi2_10prefix": 1.0
+   }
+  },
+  "residual_untransformed": {
+   "3000": {
+    "L1": 0.07,
+    "chi2_1prefix": 0.49,
+    "chi2_10prefix": 0.78
+   },
+   "10000": {
+    "L1": 0.2,
+    "chi2_1prefix": 0.51,
+    "chi2_10prefix": 0.99
+   },
+   "30000": {
+    "L1": 0.62,
+    "chi2_1prefix": 0.43,
+    "chi2_10prefix": 0.99
+   }
+  },
+  "bonus_from_draft": {
+   "3000": {
+    "L1": 0.95,
+    "chi2_1prefix": 0.0,
+    "chi2_10prefix": 0.0
+   },
+   "10000": {
+    "L1": 1.0,
+    "chi2_1prefix": 0.01,
+    "chi2_10prefix": 0.03
+   },
+   "30000": {
+    "L1": 1.0,
+    "chi2_1prefix": 0.01,
+    "chi2_10prefix": 0.01
+   }
+  },
+  "argmax_on_reject": {
+   "3000": {
+    "L1": 1.0,
+    "chi2_1prefix": 0.55,
+    "chi2_10prefix": 1.0
+   },
+   "10000": {
+    "L1": 1.0,
+    "chi2_1prefix": 0.55,
+    "chi2_10prefix": 1.0
+   },
+   "30000": {
+    "L1": 1.0,
+    "chi2_1prefix": 0.64,
+    "chi2_10prefix": 1.0
+   }
+  },
+  "target_kv_stale": {
+   "3000": {
+    "L1": 1.0,
+    "chi2_1prefix": 0.0,
+    "chi2_10prefix": 0.01
+   },
+   "10000": {
+    "L1": 1.0,
+    "chi2_1prefix": 0.02,
+    "chi2_10prefix": 0.03
+   },
+   "30000": {
+    "L1": 1.0,
+    "chi2_1prefix": 0.0,
+    "chi2_10prefix": 0.0
+   }
+  }
+ }
+}

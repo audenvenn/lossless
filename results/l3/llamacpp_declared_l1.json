@@ -1,0 +1,50 @@
+{
+ "T1.0_plain": {
+  "n": 14354,
+  "ks_stat": 0.006455398492985376,
+  "ks_p": 0.5856382590845287,
+  "cvm_p": 0.3917481009246143,
+  "chi2_p": 0.561072742586416,
+  "mean_z": 0.5019930156964287,
+  "mean_z_p": 0.40814822745483537,
+  "surprisal_z": 0.2475844406763391,
+  "surprisal_p": 0.8044559505246978,
+  "min_p": 0.3917481009246143,
+  "tokens": 14354,
+  "tested": 14354,
+  "screened": {},
+  "support_violations": 0,
+  "reject_bonf_0.01": false,
+  "post_transform_only": false,
+  "semantics": "llamacpp",
+  "temp": 1.0,
+  "top_p": 1.0,
+  "top_k": 0,
+  "source": "results/l3/llamacppraw_T1.0_plain_armoff.jsonl"
+ },
+ "qwen_think_T0.6_p0.95_k20": {
+  "n": 16376,
+  "ks_stat": 0.0057593597602672575,
+  "ks_p": 0.6468599785709976,
+  "cvm_p": 0.6732050389675671,
+  "chi2_p": 0.6687835195431532,
+  "mean_z": 0.5011774329197503,
+  "mean_z_p": 0.6017036293854059,
+  "surprisal_z": -0.15532181301635897,
+  "surprisal_p": 0.8765676199933362,
+  "min_p": 0.6017036293854059,
+  "tokens": 16384,
+  "tested": 16376,
+  "screened": {
+   "ambiguous: top-p crossing within eps of a token boundary": 8
+  },
+  "support_violations": 0,
+  "reject_bonf_0.01": false,
+  "post_transform_only": false,
+  "semantics": "llamacpp",
+  "temp": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "source": "results/l3/llamacppraw_qwen_think_T0.6_p0.95_k20_armoff.jsonl"
+ }
+}
